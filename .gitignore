@@ -1,4 +1,4 @@
 .env
-theme.json
+./theme.json
 .nyc_output
 coverage

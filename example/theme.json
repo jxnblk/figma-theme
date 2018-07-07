@@ -1,0 +1,55 @@
+{
+  "colors": {
+    "Gray 1": "#333333",
+    "Gray 2": "#4f4f4f",
+    "Gray 3": "#828282",
+    "Gray 4": "#bdbdbd",
+    "Gray 5": "#e0e0e0",
+    "Gray 6": "#f2f2f2",
+    "Red": "#eb5757",
+    "Orange": "#ff0000",
+    "Yellow": "#f2c94c",
+    "Green 1": "#219653",
+    "Green 2": "#27ae60",
+    "Green 3": "#6fcf97",
+    "Blue 1": "#2f80ed",
+    "Blue 2": "#2d9cdb",
+    "Blue 3": "#56ccf2",
+    "Purple 1": "#9b51e0",
+    "Purple 2": "#bb6bd9"
+  },
+  "textStyles": {
+    "h1": {
+      "fontFamily": "Roboto",
+      "fontWeight": 400,
+      "fontSize": 24,
+      "lineHeight": 1
+    },
+    "h2": {
+      "fontFamily": "Roboto",
+      "fontWeight": 400,
+      "fontSize": 18,
+      "lineHeight": 1
+    },
+    "h3": {
+      "fontFamily": "Roboto",
+      "fontWeight": 400,
+      "fontSize": 16,
+      "lineHeight": 1
+    }
+  },
+  "fonts": [
+    "Roboto"
+  ],
+  "fontSizes": [
+    16,
+    18,
+    24
+  ],
+  "fontWeights": [
+    400
+  ],
+  "lineHeights": [
+    1
+  ]
+}

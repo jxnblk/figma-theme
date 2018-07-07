@@ -73,7 +73,7 @@ module.exports = (data, opts = {}) => {
     return {
       id: style.id,
       name: style.name,
-      value: color.css()
+      value: color.hex()
     }
   })
   .filter(Boolean)

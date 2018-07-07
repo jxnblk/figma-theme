@@ -7,7 +7,7 @@
     "figma-theme": "./cli.js"
   },
   "scripts": {
-    "start": "./cli.js JGLoPfwRFqCwn4xZ8wUmSwp7",
+    "start": "./cli.js JGLoPfwRFqCwn4xZ8wUmSwp7 --out-dir example",
     "cover": "nyc report --reporter html",
     "test": "nyc ava"
   },
