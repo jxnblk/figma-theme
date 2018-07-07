@@ -1,0 +1,4 @@
+.env
+theme.json
+.nyc_output
+coverage
