@@ -14,10 +14,10 @@ npm i figma-theme
 ## Getting Started
 
 1. Install `figma-theme` as a dev dependency in your project
-2. Get a [personal access token] for the Figma API
+2. Get a [personal access token][token] for the Figma API
 3. Create a `.env` file with your access token
-  - `FIGMA_TOKEN=<personal-access-token>
-  - Alternatively add and environment variable for `FIGMA_TOKEN`
+  - `FIGMA_TOKEN=<personal-access-token>`
+  - Alternatively add an environment variable for `FIGMA_TOKEN`
 4. Add an npm run script: `figma-theme <figma-file-id>`
 5. Run the script to create a `theme.json` file based on Figma Styles
 
