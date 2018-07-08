@@ -102,7 +102,6 @@ figma.file(id)
     // fs.writeFile(path.join(opts.outDir, 'data.json'), JSON.stringify(data, null, 2), err => {})
   })
   .catch(err => {
-    log.error(err)
     const { response } = err
     log.error(response.status, response.statusText)
     process.exit(1)

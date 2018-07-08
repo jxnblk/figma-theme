@@ -94,6 +94,7 @@ module.exports = (data, opts = {}) => {
       value: child.style
     }
   })
+    .filter(Boolean)
     .map(style => {
       const {
         fontFamily,
