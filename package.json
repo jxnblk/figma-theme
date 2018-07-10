@@ -20,7 +20,6 @@
     "dot-prop": "^4.2.0",
     "dotenv": "^6.0.0",
     "figma-js": "^1.4.0",
-    "lodash.flatmapdeep": "^4.10.0",
     "meow": "^5.0.0",
     "pkg-conf": "^2.1.0",
     "superstruct": "^0.5.4",
