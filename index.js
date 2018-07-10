@@ -1,11 +1,18 @@
 // transform figma document into theme object
 const { get } = require('dot-prop')
 const chroma = require('chroma-js')
-const flatten = require('lodash.flatmapdeep')
 const { struct } = require('superstruct')
 
 const FILL = 'FILL'
 const TEXT = 'TEXT'
+
+const flatten = (arr = []) => arr.reduce((a, b) => {
+  return [
+    ...a,
+    b,
+    ...flatten(b.children)
+  ]
+}, [])
 
 // schema
 const Theme = struct({
@@ -52,7 +59,7 @@ module.exports = (data, opts = {}) => {
       children: tree = []
     }
   } = data
-  const children = flatten(tree, child => child.children)
+  const children = flatten(tree)
 
   const styleKeys = Object.keys(styles)
   const stylesArray = styleKeys.map(key => Object.assign({

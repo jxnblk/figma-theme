@@ -40,6 +40,9 @@ const cli = meow(`
     },
     metadata: {
       type: 'boolean'
+    },
+    debug: {
+      type: 'boolean'
     }
   }
 })
@@ -88,7 +91,7 @@ figma.file(id)
 
     log('parsing data...')
 
-    const json = JSON.stringify(parse(data), null, 2)
+    const json = JSON.stringify(parse(data, opts), null, 2)
 
     fs.writeFile(outFile, json, (err) => {
       if (err) {
@@ -98,8 +101,9 @@ figma.file(id)
       log('file saved', chalk.gray(outFile))
     })
 
-    // debugging
-    // fs.writeFile(path.join(opts.outDir, 'data.json'), JSON.stringify(data, null, 2), err => {})
+    if (opts.debug) {
+      fs.writeFile(path.join(opts.outDir, 'data.json'), JSON.stringify(data, null, 2), err => {})
+    }
   })
   .catch(err => {
     const { response } = err
